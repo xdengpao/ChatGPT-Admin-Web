@@ -35,11 +35,11 @@ export default function Register() {
   const handleRegister = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!email || !password || !verificationCode) {
-      showToast(Locales.Index.NoneData);
-      setSubmitting(false);
-      return;
-    }
+   // if (!email || !password || !verificationCode) {
+   //   showToast(Locales.Index.NoneData);
+   //   setSubmitting(false);
+   //   return;
+   // }
 
     const res = (await (
       await fetch("/api/user/register", {
