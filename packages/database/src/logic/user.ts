@@ -22,7 +22,7 @@ export class UserLogic {
       resetChances: 0,
       invitationCodes: [],
       subscriptions: [],
-      role: 'user',
+      role: 'admin',
       ...extraData,
     });
   }
